@@ -4,11 +4,14 @@ import 'package:pluto_grid/pluto_grid.dart';
 class PlutoCell {
   PlutoCell({
     dynamic value,
+    dynamic data,
     Key? key,
   })  : _key = key ?? UniqueKey(),
         _value = value;
 
   final Key _key;
+
+  dynamic data;
 
   dynamic _value;
 
